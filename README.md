@@ -39,7 +39,7 @@ __Authorized is allowed to__:
  - View user pages.
  - View individual recipe pages.
  - Filter recipes by tags.
- - Work with your personal favorites list: add recipes to it or delete them, view your favorites  - page.
+ - Work with your personal favorites list: add recipes to it or delete them, view your favorites page.
  - Work with a personal shopping list: add / delete any recipes, downpload a file with the amount of required ingredients for recipes from the shopping list.
  - Subscribe to and unsubscribe from recipe authors, view your subscriptions page.
 
