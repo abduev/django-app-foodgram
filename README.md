@@ -86,4 +86,3 @@ To stop the project run the command:
 ```sh
 docker-compose down
 ```
-
