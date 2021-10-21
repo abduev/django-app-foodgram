@@ -3,7 +3,7 @@
 
 ## Description
 Foodgram is a site that allows users publish recipes, subscribe to recipe publications of other users, add their favorite recipes to the list of "Favorites", and before going to the store, download a summary list of ingredients necessary to cook one or more selected dishes.\
-Website: https://foodgram.cf/recipes.
+Website: https://foodgram.gq/recipes.
 
 ## Tech stack
  - Python 3.8+

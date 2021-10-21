@@ -78,7 +78,7 @@ class Recipe(models.Model):
         verbose_name='Recipe image',
         upload_to='recipe_images/', blank=True, null=True
     )
-    cooking_time = models.PositiveIntegerField(
+    cooking_time = models.SmallIntegerField(
         verbose_name='cooking_time (min)'
     )
 
@@ -98,7 +98,7 @@ class IngredientInRecipe(models.Model):
         Recipe, on_delete=models.CASCADE,
         related_name='ingredientsinrecipe',
     )
-    amount = models.PositiveIntegerField(verbose_name='Amount')
+    amount = models.SmallIntegerField(verbose_name='Amount')
     constraints = [models.UniqueConstraint(
         fields=['ingredient', 'recipe'], name='unique_ingredientinrecipe'
     )]

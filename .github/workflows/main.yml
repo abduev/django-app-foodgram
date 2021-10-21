@@ -56,10 +56,10 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           stack_file_name: docker-compose.yaml
           script: |
-            sudo docker pull abduev/foodgram_frontend:latest
             sudo docker pull abduev/foodgram_backend:latest
             cd foodgram-project-react/infra/
             sudo docker-compose stop
+            rm .env
             touch .env
             echo POSTGRES_NAME=${{ secrets.POSTGRES_NAME }} >> .env
             echo POSTGRES_USER=${{ secrets.POSTGRES_USER }} >> .env

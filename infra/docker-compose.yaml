@@ -8,16 +8,17 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
-      - ../backend/.env
+      - ../backend/prod.env
 
   backend:
-    image: abduev/foodgram_backend
-    restart: always
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
     volumes:
       - static_value:/code/backend_static/
       - media_value:/code/backend_media/
     env_file:
-      - ../backend/.env
+      - ../backend/prod.env
     depends_on:
       - db
 
