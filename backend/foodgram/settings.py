@@ -12,7 +12,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = os.environ.get('DEBUG', 'FALSE').upper() == 'TRUE'
 
-ALLOWED_HOSTS = ['foodgram.cf', 'www.foodgram.cf', '178.154.204.34', 'backend', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['foodgram.gq', 'www.foodgram.gq', '178.154.204.34', 'backend', 'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -27,7 +27,8 @@ INSTALLED_APPS = [
     'users',
     'api',
     'colorfield',
-    'django_filters'
+    'django_filters',
+    'drf_yasg'
 ]
 
 MIDDLEWARE = [
