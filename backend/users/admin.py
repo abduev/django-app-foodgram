@@ -10,9 +10,13 @@ from api.models import (
 User = get_user_model()
 
 admin.site.unregister(Group)
+
 admin.site.unregister(User)
+
 admin.site.register(Tag)
+
 admin.site.register(IngredientInRecipe)
+
 admin.site.register(Unit)
 admin.site.register(Subscription)
 admin.site.register(Favorite)
